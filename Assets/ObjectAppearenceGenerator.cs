@@ -15,7 +15,7 @@ public class ObjectAppearenceGenerator : MonoBehaviour
     void Update()
     {
        
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             currentIndex++;
             if (currentIndex < cubes.Length)
@@ -29,7 +29,7 @@ public class ObjectAppearenceGenerator : MonoBehaviour
                 currentIndex = -1;
             }
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
 
             DeactivateAll();
